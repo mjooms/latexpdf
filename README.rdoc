@@ -1,0 +1,35 @@
+= LaTeXPdf
+
+* Git: http://github.com/mjooms/latexpdf
+* Original author: Matthijs Ooms 
+* Copyright: 2016
+* License: MIT-LICENSE
+
+== Description
+
+Latexpdf is a renderer intended for rails which compiles Tex files with ERB to a PDF using xelatex by
+default so that it supports Unicode.
+
+== Synopsis
+
+TODO
+
+== Requirements
+
+* ruby 2.2
+* rails 4
+
+== Install
+
+* gem install latexpdf
+
+== Development
+
+Developing rails-latex requires bundler
+
+* rake test
+
+== Contributions
+
+* Matthijs Ooms
+
