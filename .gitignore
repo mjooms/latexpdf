@@ -1,0 +1,5 @@
+/latexpdf-*.gem
+Gemfile.lock
+.idea
+coverage
+tmp
