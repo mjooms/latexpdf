@@ -1,3 +1,4 @@
+
 require "rbconfig"
 require "logger"
 require "securerandom"
@@ -11,6 +12,8 @@ require "latexpdf/errors/latexpdf_error"
 
 # Generator
 require "latexpdf/pdf_generator"
+
+require "latexpdf/railtie" if defined?(Rails)
 
 module Latexpdf 
   class << self
@@ -28,5 +31,15 @@ module Latexpdf
 
   def self.logger
     @logger ||= configuration.logger
+  end
+
+  def self.compile(tex)
+    generator = PdfGenerator.new(tex)
+    begin
+      generator.generate
+      generator.content
+    ensure
+      generator.cleanup
+    end
   end
 end

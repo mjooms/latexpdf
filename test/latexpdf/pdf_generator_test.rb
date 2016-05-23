@@ -13,7 +13,7 @@ module Latexpdf
     end
 
     def test_fail_on_invalid_tex
-      invalid_tex_file = File.join(data_path, "invalid_tex.tex.erb")
+      invalid_tex_file = File.join(data_path, "invalid_tex.tex")
       @subject = PdfGenerator.new(invalid_tex_file)
       e = assert_raises LatexpdfError do
         subject.generate
@@ -24,8 +24,8 @@ module Latexpdf
     private
 
     def subject
-      minimal_tex_file = File.join(data_path, "minimal.tex.erb")
-      @subject ||= PdfGenerator.new(minimal_tex_file)
+      minimal_tex_file = File.join(data_path, "minimal.tex")
+      @subject ||= PdfGenerator.new(File.read(minimal_tex_file))
     end
 
     def pdf_file

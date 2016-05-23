@@ -6,10 +6,10 @@
 # +errors+ will contain latex log on failure
 module Latexpdf
   class PdfGenerator
-    attr_reader :errors, :template, :pdf_file
+    attr_reader :errors, :template, :pdf_file, :content
 
-    def initialize(template)
-      @template = template
+    def initialize(tex)
+      @template = tex
     end
 
     def generate
@@ -17,7 +17,10 @@ module Latexpdf
       Latexpdf.configuration.passes.times do
         run_tex
       end
-      @pdf_file = target_pdf_file if pdf_exist?
+      if pdf_exist?
+        @pdf_file = target_pdf_file
+        @content = File.read(pdf_file)
+      end
     end
 
     def cleanup
@@ -41,7 +44,7 @@ module Latexpdf
 
     def write_tex
       File.open(target_tex_file, "w") do |f|
-        f.write render
+        f.write template
         f.close
       end
     end
@@ -51,7 +54,6 @@ module Latexpdf
     end
 
     def run_tex
-      Dir.chdir build_path
       args = %w[-halt-on-error -shell-escape -interaction batchmode]
       args = args + ["#{target_tex_file}"]
 
@@ -79,11 +81,6 @@ module Latexpdf
 
     def build_id
       @build_id ||= SecureRandom.uuid
-    end
-
-    def render
-      renderer = ERB.new File.read(template)
-      renderer.result(binding)
     end
 
     def make_build_path
