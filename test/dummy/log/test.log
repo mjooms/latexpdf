@@ -1,0 +1,458 @@
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/handlers/rb_handler" for 127.0.0.1 at 2016-05-23 14:54:10 +0200
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/handlers/rb_handler" for 127.0.0.1 at 2016-05-23 14:56:09 +0200
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/handlers/tex_handler" for 127.0.0.1 at 2016-05-23 14:56:23 +0200
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/handlers/tex_example" for 127.0.0.1 at 2016-05-23 14:56:34 +0200
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 14:57:17 +0200
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 14:57:39 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 13ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 14:58:32 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 12ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:02:14 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.html within layouts/application (1.7ms)
+Completed 200 OK in 208ms (Views: 207.8ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:02:48 +0200
+Processing by TexController#example as HTML
+Completed 500 Internal Server Error in 10ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:03:10 +0200
+Processing by TexController#example as HTML
+Completed 500 Internal Server Error in 10ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:03:25 +0200
+Processing by TexController#example as HTML
+Completed 500 Internal Server Error in 8ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:12:58 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 13ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:13:20 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:18:07 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 10ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:19:10 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 26ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:25:41 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 14ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:26:01 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 9ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 15:29:33 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 13ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:03:56 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 14ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:04:33 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (584.9ms)
+Completed 500 Internal Server Error in 595ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:05:11 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (391.5ms)
+Completed 500 Internal Server Error in 400ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:06:05 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (369.4ms)
+Completed 500 Internal Server Error in 378ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:06:59 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (1316.1ms)
+Completed 500 Internal Server Error in 1324ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:12:19 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (1439.4ms)
+Completed 200 OK in 1607ms (Views: 1607.2ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:12:43 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex within layouts/application (1269.4ms)
+Completed 200 OK in 1451ms (Views: 1451.0ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:13:32 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex (1280.5ms)
+Completed 200 OK in 1287ms (Views: 1286.6ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:16:25 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex (1380.0ms)
+Completed 200 OK in 1386ms (Views: 1386.0ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:16:43 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex (1331.7ms)
+Completed 200 OK in 1339ms (Views: 1338.7ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:17:05 +0200
+Processing by TexController#example as HTML
+  Rendered tex/example.tex (1328.4ms)
+Completed 200 OK in 1336ms (Views: 1335.4ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:18:13 +0200
+Processing by TexController#example as HTML
+Completed 406 Not Acceptable in 0ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example" for 127.0.0.1 at 2016-05-23 16:19:22 +0200
+Processing by TexController#example as HTML
+Completed 406 Not Acceptable in 0ms
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:20:50 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1452.2ms)
+Completed 200 OK in 1461ms (Views: 1460.7ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:21:28 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1226.5ms)
+Completed 200 OK in 1236ms (Views: 1235.7ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:22:20 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1356.7ms)
+Completed 200 OK in 1364ms (Views: 1363.5ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:22:28 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1266.4ms)
+Completed 200 OK in 1273ms (Views: 1272.5ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:23:18 +0200
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:24:41 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (2907.5ms)
+Completed 200 OK in 2918ms (Views: 2917.6ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:39:22 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1183.2ms)
+Completed 200 OK in 1192ms (Views: 1192.2ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:39:37 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (3252.5ms)
+Completed 200 OK in 3260ms (Views: 3260.0ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:39:46 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1187.3ms)
+Completed 200 OK in 1195ms (Views: 1194.3ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:40:45 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.tex (1219.8ms)
+Completed 200 OK in 1229ms (Views: 1228.8ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:41:49 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (2898.1ms)
+Completed 200 OK in 2907ms (Views: 2907.1ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:43:32 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1305.6ms)
+Completed 200 OK in 1313ms (Views: 1312.4ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:44:05 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1227.8ms)
+Completed 200 OK in 1235ms (Views: 1235.0ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:44:22 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1224.8ms)
+Completed 200 OK in 1232ms (Views: 1232.0ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:44:38 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1240.9ms)
+Completed 200 OK in 1248ms (Views: 1247.9ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:44:50 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1219.5ms)
+Completed 200 OK in 1227ms (Views: 1227.1ms)
+-----------------------
+RenderingTest: test_Boo
+-----------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:45:25 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1234.0ms)
+Completed 200 OK in 1242ms (Views: 1241.4ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:46:06 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1241.9ms)
+Completed 200 OK in 1251ms (Views: 1250.6ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:46:35 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1164.9ms)
+Completed 200 OK in 1173ms (Views: 1172.3ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 16:49:24 +0200
+Processing by TexController#example as PDF
+Completed 500 Internal Server Error in 11ms
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:18:37 +0200
+Processing by TexController#example as PDF
+Completed 500 Internal Server Error in 11ms
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:19:19 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (0.7ms)
+Completed 500 Internal Server Error in 10ms
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:19:38 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (1.9ms)
+Completed 200 OK in 11ms (Views: 10.3ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:19:59 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (1.6ms)
+Completed 200 OK in 10ms (Views: 10.0ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:26:19 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (1.5ms)
+Completed 200 OK in 11ms (Views: 10.4ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:27:56 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (1.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:28:18 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (1.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:29:01 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (2.1ms)
+Completed 200 OK in 12ms (Views: 11.8ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:29:37 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex.erb (1.4ms)
+Completed 200 OK in 9ms (Views: 9.3ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:30:22 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (2.2ms)
+Completed 500 Internal Server Error in 11ms
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:31:08 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (0.7ms)
+Completed 500 Internal Server Error in 10ms
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:34:40 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1.8ms)
+Completed 500 Internal Server Error in 10ms
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:34:51 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1473.0ms)
+Completed 200 OK in 1480ms (Views: 1479.6ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:37:46 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (2875.0ms)
+Completed 200 OK in 2885ms (Views: 2884.2ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:38:05 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1331.6ms)
+Completed 200 OK in 1338ms (Views: 1337.8ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:38:13 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1206.4ms)
+Completed 200 OK in 1214ms (Views: 1214.1ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:39:51 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1147.5ms)
+Completed 200 OK in 1156ms (Views: 1155.3ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:40:08 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1144.2ms)
+Completed 200 OK in 1154ms (Views: 1153.8ms)

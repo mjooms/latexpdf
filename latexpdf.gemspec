@@ -12,6 +12,7 @@ _spec = Gem::Specification.new do |s|
   s.homepage = "https://github.com/mjooms/latexpdf"
   s.license = "MIT"
 
+  s.add_development_dependency("rails")
   s.add_development_dependency("minitest")
   s.add_development_dependency("minitest-reporters")
   s.add_development_dependency("rake")
