@@ -12,12 +12,13 @@ _spec = Gem::Specification.new do |s|
   s.homepage = "https://github.com/mjooms/latexpdf"
   s.license = "MIT"
 
-  s.add_development_dependency("rails")
-  s.add_development_dependency("minitest")
-  s.add_development_dependency("minitest-reporters")
-  s.add_development_dependency("rake")
-  s.add_development_dependency("simplecov")
-  s.add_development_dependency("pdf-reader")
+  s.add_development_dependency "rails",              "~> 4.2"
+  s.add_development_dependency "minitest",           "~> 5.9"
+  s.add_development_dependency "minitest-reporters", "~> 1.1"
+  s.add_development_dependency "rake",               "~> 11.1"
+  s.add_development_dependency "simplecov",          "~> 0.11"
+  s.add_development_dependency "pdf-reader",         "~> 1.4"
+  s.add_development_dependency "rubygems-tasks",     "~> 0.2"
 
   s.rdoc_options = [%q{--main=README.rdoc}]
   s.extra_rdoc_files = [
