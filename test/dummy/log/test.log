@@ -456,3 +456,108 @@ Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-23 17:40:08 +0200
 Processing by TexController#example as PDF
   Rendered tex/example.pdf.tex (1144.2ms)
 Completed 200 OK in 1154ms (Views: 1153.8ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-24 10:22:59 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (2845.9ms)
+Completed 200 OK in 2856ms (Views: 2855.3ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-24 11:01:22 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1315.1ms)
+Completed 200 OK in 1326ms (Views: 1325.5ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-24 11:08:45 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (1221.9ms)
+Completed 200 OK in 1229ms (Views: 1229.0ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:13:39 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (356.3ms)
+Completed 500 Internal Server Error in 364ms
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:13:58 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (15.7ms)
+Completed 500 Internal Server Error in 23ms
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:14:21 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1306.3ms)
+Completed 200 OK in 1314ms (Views: 1314.1ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:27:59 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1307.1ms)
+Completed 200 OK in 1314ms (Views: 1313.8ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:30:41 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1358.4ms)
+Completed 200 OK in 1367ms (Views: 1366.3ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:31:00 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1300.7ms)
+Completed 200 OK in 1308ms (Views: 1307.7ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:31:20 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1287.9ms)
+Completed 200 OK in 1295ms (Views: 1294.4ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:31:46 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1301.4ms)
+Completed 200 OK in 1309ms (Views: 1309.2ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:31:54 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1303.6ms)
+Completed 200 OK in 1311ms (Views: 1310.3ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:31:59 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1326.0ms)
+Completed 200 OK in 1333ms (Views: 1332.7ms)
+-----------------------------------------------------------
+RenderingTest: test_Generate_PDF_on_the_fly_in_a_controller
+-----------------------------------------------------------
+Started GET "/tex/example.pdf" for 127.0.0.1 at 2016-05-24 11:43:02 +0200
+Processing by TexController#example as PDF
+  Rendered tex/example.pdf.tex (3393.3ms)
+Completed 200 OK in 3402ms (Views: 3402.0ms)
+---------------------------------------------------------
+RenderingTest: test_Generate_PDF_using_escaped_characters
+---------------------------------------------------------
+Started GET "/tex/example2.pdf" for 127.0.0.1 at 2016-05-24 11:43:05 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (3438.5ms)
+Completed 200 OK in 3441ms (Views: 3440.4ms)

@@ -1,0 +1,54 @@
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:21:02 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1397.9ms)
+Completed 200 OK in 1408ms (Views: 1408.0ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:24:01 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1451.5ms)
+Completed 200 OK in 1454ms (Views: 1453.4ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:24:02 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1495.4ms)
+Completed 200 OK in 1498ms (Views: 1497.5ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:24:47 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1300.8ms)
+Completed 200 OK in 1303ms (Views: 1302.3ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:24:49 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1474.8ms)
+Completed 200 OK in 1478ms (Views: 1477.2ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:25:01 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1272.2ms)
+Completed 200 OK in 1274ms (Views: 1273.6ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:25:02 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1470.4ms)
+Completed 200 OK in 1472ms (Views: 1471.9ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:27:26 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1483.5ms)
+Completed 200 OK in 1495ms (Views: 1494.2ms)
+
+
+Started GET "/tex/example2.pdf" for ::1 at 2016-05-24 11:27:28 +0200
+Processing by TexController#example2 as PDF
+  Rendered tex/example2.pdf.tex (1586.0ms)
+Completed 200 OK in 1589ms (Views: 1588.4ms)

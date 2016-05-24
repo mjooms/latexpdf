@@ -13,6 +13,9 @@ require "latexpdf/errors/latexpdf_error"
 # Generator
 require "latexpdf/pdf_generator"
 
+# Escaper
+require "latexpdf/escaper"
+
 require "latexpdf/railtie" if defined?(Rails)
 
 module Latexpdf 

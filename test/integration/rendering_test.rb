@@ -8,4 +8,14 @@ class RenderingTest < ActionDispatch::IntegrationTest
     assert_equal 1, reader.pages.count
     assert_match (/Test latex document/), reader.pages.first.text
   end
+
+  test "Generate PDF using escaped characters" do
+    get "/tex/example2.pdf"
+    assert_match (/application\/pdf/), response.headers["Content-Type"]
+    reader = PDF::Reader.new(StringIO.new(response.body))
+    assert_equal 1, reader.pages.count
+    assert_match (/& % \$ #/), reader.pages.first.text
+    assert_match (/\~ \^/), reader.pages.first.text
+    # PDF reader does not parse the others correctly unfortunately
+  end
 end
