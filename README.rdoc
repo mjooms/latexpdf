@@ -24,7 +24,7 @@ TODO
 
 == Development
 
-Developing rails-latex requires bundler
+Developing latexpdf requires bundler
 
 * rake test
 
