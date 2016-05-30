@@ -7,25 +7,53 @@ module Latexpdf
     end
 
     def test_generate_pdf
+      set_subject  "minimal.tex"
       subject.generate
       assert File.file?(pdf_file)
       assert_match (/Test latex document/), pdf_reader.pages.first.text
     end
 
     def test_fail_on_invalid_tex
-      invalid_tex_file = File.join(data_path, "invalid_tex.tex")
-      @subject = PdfGenerator.new(invalid_tex_file)
+      set_subject "invalid_tex.tex"
       e = assert_raises LatexpdfError do
         subject.generate
       end
       assert_match (/Missing \\begin\{document\}/), e.message
     end
 
-    private
+    def test_fail_on_empty_tex
+      set_subject "empty.tex"
+      e = assert_raises LatexpdfError do
+        subject.generate
+      end
+      assert_match (/Tex failed: No PDF generated/), e.message
+    end
+
+    def test_invokes_tex_N_times
+      set_subject  "minimal.tex"
+
+      Latexpdf.configure do |config|
+        config.passes = 3
+      end
+
+      subject.expects(:run_tex).with({generate_pdf: true}).twice
+      subject.expects(:run_tex).with({generate_pdf: false}).once
+
+      e = assert_raises LatexpdfError do
+        subject.generate
+      end
+      assert_match (/Tex failed: No PDF generated/), e.message
+    end
+
+    protected
 
     def subject
-      minimal_tex_file = File.join(data_path, "minimal.tex")
-      @subject ||= PdfGenerator.new(File.read(minimal_tex_file))
+      @subject
+    end
+
+    def set_subject(file)
+      tex_file = File.join(data_path, file)
+      @subject = PdfGenerator.new(File.read(tex_file))
     end
 
     def pdf_file

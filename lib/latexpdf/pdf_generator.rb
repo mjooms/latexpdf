@@ -14,12 +14,15 @@ module Latexpdf
 
     def generate
       write_tex
-      Latexpdf.configuration.passes.times do
-        run_tex
+      (Latexpdf.configuration.passes - 1).times do
+        run_tex generate_pdf: true
       end
+      run_tex generate_pdf: false
       if pdf_exist?
         @pdf_file = target_pdf_file
         @content = File.read(pdf_file)
+      else
+        raise LatexpdfError.new "Tex failed: No PDF generated"
       end
     end
 
@@ -53,16 +56,16 @@ module Latexpdf
       "xelatex"
     end
 
-    def run_tex
+    def run_tex(generate_pdf: false)
       args = %w[-halt-on-error -shell-escape -interaction batchmode]
+      args += %w[-no-pdf] unless generate_pdf
       args = args + ["#{target_tex_file}"]
 
       result = exec_in_build_path do
         system tex_command, *args, [:out, :err] => "/dev/null"
       end
 
-      raise LatexpdfError.new "Latex failed:\n#{tex_log}" unless result
-      raise LatexpdfError.new "Latex PDF not generated:\n#{tex_log}" unless pdf_exist?
+      raise LatexpdfError.new "Tex failed:\n#{tex_log}" unless result
     end
 
     def exec_in_build_path

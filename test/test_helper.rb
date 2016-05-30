@@ -1,12 +1,15 @@
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
-require File.expand_path("../../test/dummy/config/environment.rb",  __FILE__)
-require "rails/test_help"
 
 require "simplecov"
 SimpleCov.start if ENV["COVERAGE"]
 
+require File.expand_path("../../test/dummy/config/environment.rb",  __FILE__)
+require "rails/test_help"
+
+
 require "minitest/autorun"
+require 'mocha/mini_test'
 
 old_verbose, $VERBOSE = $VERBOSE, nil
 require "pdf-reader"
