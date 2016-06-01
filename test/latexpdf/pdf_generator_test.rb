@@ -36,9 +36,9 @@ module Latexpdf
         config.passes = 3
       end
 
-      subject.expects(:run_tex).with({generate_pdf: true}).twice
-      subject.expects(:run_tex).with({generate_pdf: false}).once
+      subject.expects(:run_tex).times(3)
 
+      #since run_tex is mocked, an error occurs
       e = assert_raises LatexpdfError do
         subject.generate
       end

@@ -14,10 +14,10 @@ module Latexpdf
 
     def generate
       write_tex
-      (Latexpdf.configuration.passes - 1).times do
-        run_tex generate_pdf: true
+      Latexpdf.configuration.passes.times do
+        run_tex
       end
-      run_tex generate_pdf: false
+
       if pdf_exist?
         @pdf_file = target_pdf_file
         @content = File.read(pdf_file)
@@ -56,7 +56,7 @@ module Latexpdf
       "xelatex"
     end
 
-    def run_tex(generate_pdf: false)
+    def run_tex(generate_pdf: true)
       args = %w[-halt-on-error -shell-escape -interaction batchmode]
       args += %w[-no-pdf] unless generate_pdf
       args = args + ["#{target_tex_file}"]
