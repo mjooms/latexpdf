@@ -6,13 +6,13 @@
 # +errors+ will contain latex log on failure
 module Latexpdf
   class PdfGenerator
-    attr_reader :errors, :template, :pdf_file, :content
+    attr_reader :errors, :template, :pdf_file
 
     def initialize(tex)
       @template = tex
     end
 
-    def generate
+    def generate(target_file=nil)
       write_tex
       Latexpdf.configuration.passes.times do
         run_tex
@@ -20,7 +20,7 @@ module Latexpdf
 
       if pdf_exist?
         @pdf_file = target_pdf_file
-        @content = File.read(pdf_file)
+        FileUtils.cp target_pdf_file, target_file if target_file
       else
         raise LatexpdfError.new "Tex failed: No PDF generated"
       end
@@ -35,6 +35,10 @@ module Latexpdf
 
     def pdf_exist?
       File.exist?(target_pdf_file)
+    end
+
+    def content
+      File.read(pdf_file) if pdf_exist?
     end
 
     protected

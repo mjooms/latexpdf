@@ -45,7 +45,30 @@ module Latexpdf
       assert_match (/Tex failed: No PDF generated/), e.message
     end
 
+    def test_content_exists_until_cleanup
+      set_subject  "minimal.tex"
+      assert_nil subject.generate
+      refute_nil subject.content
+      subject.cleanup
+      assert_nil subject.content
+    end
+
+    def test_with_target_file
+      set_subject  "minimal.tex"
+      assert_nil subject.generate tmp_file
+      assert File.file?(tmp_file)
+      reader = PDF::Reader.new(tmp_file)
+      assert_match (/Test latex document/), reader.pages.first.text
+      subject.cleanup
+      assert File.file?(tmp_file)
+      FileUtils.rm tmp_file
+    end
+
     protected
+
+    def tmp_file
+      @tmp ||= File.join(__dir__, "..","dummy","tmp","#{SecureRandom.hex}.pdf")
+    end
 
     def subject
       @subject

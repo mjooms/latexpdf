@@ -36,11 +36,11 @@ module Latexpdf
     @logger ||= configuration.logger
   end
 
-  def self.compile(tex)
+  def self.compile(tex, target=nil)
     generator = PdfGenerator.new(tex)
     begin
-      generator.generate
-      generator.content
+      generator.generate target
+      generator.content unless target
     ensure
       generator.cleanup
     end
