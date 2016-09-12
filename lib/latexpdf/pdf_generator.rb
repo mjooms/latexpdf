@@ -65,21 +65,10 @@ module Latexpdf
       args += %w[-no-pdf] unless generate_pdf
       args = args + ["#{target_tex_file}"]
 
-      result = exec_in_build_path do
-        system tex_command, *args, [:out, :err] => "/dev/null"
-      end
+      cmd = "cd #{build_path} && #{tex_command} #{args.join(' ')}"
+      result = system cmd, [:out, :err] => "/dev/null"
 
       raise LatexpdfError.new "Tex failed:\n#{tex_log}" unless result
-    end
-
-    def exec_in_build_path
-      orig_dir = Dir.pwd
-      begin
-        Dir.chdir build_path
-        yield
-      ensure
-        Dir.chdir orig_dir
-      end
     end
 
     def tex_log
