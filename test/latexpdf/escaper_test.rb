@@ -38,6 +38,12 @@ module Latexpdf
       assert_equal "\\textbackslash{}", Latexpdf.escape_latex("\\")
     end
 
+    # Although 007F is a valid UTF-8 char, xelatex does not like it
+    # Since it is not visible (DELETE) we substitute with nothing
+    def test_remove_utf8_delete
+      assert_equal "text:", Latexpdf.escape_latex("text:\u007F")
+    end
+
     def test_escape_percent_sign
       assert_equal "\\%", Latexpdf.escape_latex("%")
     end

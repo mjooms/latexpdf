@@ -7,17 +7,23 @@ module Latexpdf
         '~' => 'asciitilde',
         '|' => 'bar',
         '<' => 'less',
-        '>' => 'greater',
+        '>' => 'greater'
     }
 
+    def remove_invalid_utf8(text)
+      text.gsub("\u007F", "")
+    end
+
     def tex_safe(text)
-      text.gsub(ESCAPE_RE) { |m|
+      text = text.gsub(ESCAPE_RE) { |m|
         if $1
           "\\#{m}"
         else
           "\\text#{ESC_MAP[m]}{}"
         end
-      }.html_safe
+      }
+      text = remove_invalid_utf8(text)
+      text.html_safe
     end
   end
 
