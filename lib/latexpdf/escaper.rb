@@ -10,8 +10,13 @@ module Latexpdf
         '>' => 'greater'
     }
 
-    def remove_invalid_utf8(text)
-      text.gsub("\u007F", "")
+    def tab_to_space(text)
+      text.gsub(/\x09/, " ")
+    end
+
+    def remove_non_printable_chars(text)
+      pattern = /([\x00-\x08\x0B-\x1F\x7F])/
+      text.gsub(pattern, "")
     end
 
     def tex_safe(text)
@@ -22,7 +27,8 @@ module Latexpdf
           "\\text#{ESC_MAP[m]}{}"
         end
       }
-      text = remove_invalid_utf8(text)
+      text = tab_to_space(text)
+      text = remove_non_printable_chars(text)
       text.html_safe
     end
   end
