@@ -10,8 +10,8 @@ module Latexpdf
         '>' => 'greater'
     }
 
-    def tab_to_space(text)
-      text.gsub(/\x09/, " ")
+    def tab_newline_to_space(text)
+      text.gsub(/[\x09\x0A]/, " ")
     end
 
     def remove_non_printable_chars(text)
@@ -27,7 +27,7 @@ module Latexpdf
           "\\text#{ESC_MAP[m]}{}"
         end
       }
-      text = tab_to_space(text)
+      text = tab_newline_to_space(text)
       text = remove_non_printable_chars(text)
       text.html_safe
     end

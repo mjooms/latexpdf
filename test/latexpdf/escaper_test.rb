@@ -57,10 +57,10 @@ module Latexpdf
       assert_equal "  test ", Latexpdf.escape_latex("\t\ttest\t")
     end
 
-    def test_keeps_newlines
+    def test_replaces_newlines_to_space
       text = "\ntest\n\n"
       escaped = Latexpdf.escape_latex(text)
-      assert_equal text, escaped
+      assert_equal " test  ", escaped
     end
 
     def test_remove_non_printable_chars
