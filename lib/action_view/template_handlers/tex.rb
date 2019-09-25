@@ -5,7 +5,7 @@ module ActionView
         def handles_encoding?; true; end
 
         class_attribute :default_format
-        self.default_format = Mime::PDF
+        self.default_format = Mime[:pdf]
 
         def erb_handler
           @@erb_handler ||= ActionView::Template.registered_template_handler(:erb)
