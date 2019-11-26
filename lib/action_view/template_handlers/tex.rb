@@ -11,12 +11,12 @@ module ActionView
           @@erb_handler ||= ActionView::Template.registered_template_handler(:erb)
         end
 
-        def self.call(template)
-          new.call(template)
+        def self.call(template, source)
+          new.call(template, source)
         end
 
-        def call(template)
-          compiled_source = erb_handler.call(template)
+        def call(template, source)
+          compiled_source = erb_handler.call(template, source)
 
           "Latexpdf::compile(begin;#{compiled_source};end)"
         end
