@@ -1,4 +1,7 @@
 ## Changelog
 
+0.5.0
+- Rails 6 compatibility
+
 0.4.11
 - Use Mime[:pdf] instead of Mime::PDF for Rails 5 compatibility

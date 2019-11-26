@@ -9,7 +9,7 @@ require "rails/test_help"
 
 
 require "minitest/autorun"
-require 'mocha/mini_test'
+require 'mocha/minitest'
 
 old_verbose, $VERBOSE = $VERBOSE, nil
 require "pdf-reader"
