@@ -1,7 +1,7 @@
 require "test_helper"
 
 module Latexpdf
-  class ConfigurationTest < MiniTest::Test
+  class ConfigurationTest < Minitest::Test
     def test_implement_passes_configuration
       assert_equal 2, Configuration.new.passes
     end
