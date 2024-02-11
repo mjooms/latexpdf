@@ -1,7 +1,7 @@
 require "test_helper"
 
 module Latexpdf
-  class EscaperTest < MiniTest::Test
+  class EscaperTest < Minitest::Test
     def test_escape_ampersand
       assert_equal "\\&", Latexpdf.escape_latex("&")
     end
