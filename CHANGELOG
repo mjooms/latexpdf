@@ -1,5 +1,8 @@
 ## Changelog
 
+0.6.1
+- fix: Register :tex correctly as Mime type
+
 0.6.0
 - Rails 7.1 compatibility
 
